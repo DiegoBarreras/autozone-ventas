@@ -188,7 +188,7 @@ function validar(event) {
   } else if (preciopieza < 0) {
     alert('Inserta un precio válido');
     event.preventDefault(); 
-  } else if (numart > 12) {
+  } else if (numart > 16) {
     alert('El número de artículos ha llegado a su límite');
     event.preventDefault(); 
   } else {
