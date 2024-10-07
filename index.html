@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE VENTAS AUTOZONE 🚘</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenido">
+        <div class="contenedor1">
+            <form>
+            <img src="https://cdn.worldvectorlogo.com/logos/autozone-logo.svg" alt="Tiendas AutoZone" id="imgaz">
+            <p class="parrafo">Inserta aquí el código numérico</p>
+            <input type="number" id="input_codnum" min ="0" max="99999999"></input>
+            <p class="parrafo">Inserta aquí la descripción del producto</p>
+            <input type="text" id="input_desc"></input>
+            <p class="parrafo">Inserta aquí el número de piezas vendidas</p>
+            <input type="number" min="1" id="input_piezas"></input>
+            <p class="parrafo">Inserta aquí el precio de venta</p>
+            <input type="number" min="0" step="0.01" id="input_precio"></input>
+            <div class="contenedor_botones">
+                <button id="boton_capturar">Capturar</button>
+            </div>
+            <div class="contenedor_botones">
+                <button id="boton_ordcodigo">Ordenar por código</button>
+                <button id="boton_orddesc">Ordenar por descripción</button>
+                <button id="boton_ordprecioasc">Ordenar por precio ascendente</button>
+                <button id="boton_ordpreciodes">Ordenar por precio descendente</button>
+            </div>
+            <div class="contenedor_botones">
+                <input type="text" id="input_buscar"></input>
+                <button id="boton_buscar">Buscar</button>
+            </div>
+            </form>
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Piezas vendidas</th>
+                        <th>Precio de venta</th>
+                        <th>Importe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <footer>Copyright © 2024 Diego Barreras</footer>
+</body>
+</html>
